@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Dijkstra Algorithm</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+		<style>
+			body {
+				background-color: #282828;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="col-12">
+				<div class="jumbotron" style="margin-top: 120px; padding: 2rem;">
+					<h4>Dijkstra Algorithm</h4>
+
+					<form action="submit">
+
+						<div class="form-group">
+							<label>Choose a entry file (*.json)</label>
+							<input type="file" id="files" name="file" class="form-control" />
+						</div>
+
+						<div class="row">
+							<div class="col-6">
+								<pre id="grafo" style="margin-bottom:5px;"></pre>
+							</div>
+							<div class="col-6">
+								<div class="row">
+									<div class="col-6">
+										<div class="form-group">
+											<label for="origin">Type the origin value</label>
+											<input type="text" class="form-control" name="origin" id="origin">
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-group">
+											<label for="destiny">Type the destiny value</label>
+											<input type="text" class="form-control" iname "destiny" id="destiny">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<button class="btn btn-primary" id="button" type="button">Execute Dijkstra</button>
+
+										<div class="row">
+											<div class="col-12" style="margin-top: 20px;">
+												<p style="margin-bottom: 5px;" id="pesoFinal"></p>
+												<p style="margin-bottom: 5px;" id="verticesPercorridos"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="djikstra.js"></script>
+
+</html>
